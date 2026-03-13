@@ -17,13 +17,13 @@ public abstract class OptionsScreenMixin extends Screen {
         super(title);
     }
 
-    @Inject(method = "init()V", at = @At("TAIL"))
+    @Inject(method = "init", at = @At("TAIL"))
     private void minecraftdebugging$addButton(CallbackInfo ci) {
         addDrawableChild(
-        ButtonWidget.builder(
-            Text.literal("Minecraft Debugging"),
-            b -> MinecraftDebugging.open(this)
-        ).dimensions(width / 2 - 100, height - 25, 200, 20).build()
-    );
-}
+            ButtonWidget.builder(
+                Text.literal("Minecraft Debugging"),
+                b -> MinecraftDebugging.open(this)
+            ).dimensions(this.width / 2 - 100, 5, 200, 20).build()
+        );
+    }
 }
