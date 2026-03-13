@@ -2,7 +2,8 @@
   "required": true,
   "package": "com.izhan.dbg.minecraftdebugging.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": [
+  "refmap": "minecraftdebugging-refmap.json",
+  "mixins": [
     "OptionsScreenMixin"
   ],
   "injectors": {
