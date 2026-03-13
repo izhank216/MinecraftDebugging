@@ -17,7 +17,7 @@ public abstract class OptionsScreenMixin extends Screen {
         super(title);
     }
 
-    @Inject(method="init", at=@At("TAIL"))
+    @Inject(method = "init()V", at = @At("TAIL"))
     private void minecraftdebugging$addButton(CallbackInfo ci) {
         addDrawableChild(
             ButtonWidget.builder(
