@@ -23,7 +23,7 @@ public abstract class OptionsScreenMixin extends Screen {
             ButtonWidget.builder(
                 Text.literal("Minecraft Debugging"),
                 b -> MinecraftDebugging.open(this)
-            ).dimensions(width/2-100,height-60,200,20).build()
+            ).dimensions(width / 2 - 100, height / 2 + 105, 200, 20).build()
         );
     }
 
