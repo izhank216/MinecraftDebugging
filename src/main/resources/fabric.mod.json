@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraftdebugging",
+  "version": "${version}",
+  "name": "MinecraftDebugging",
+  "description": "Developer debugging tools for Minecraft",
+  "authors": ["Izhan"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.izhan.dbg.minecraftdebugging.MinecraftDebugging"
+    ]
+  },
+  "mixins": [
+    "minecraftdebugging.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": ">=1.21"
+  }
+}
