@@ -1,4 +1,3 @@
-Gemini said
 package com.izhan.dbg.minecraftdebugging;
 
 import net.fabricmc.api.ClientModInitializer;
