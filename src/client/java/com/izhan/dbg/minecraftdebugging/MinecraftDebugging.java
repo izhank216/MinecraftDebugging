@@ -67,7 +67,7 @@ public class MinecraftDebugging implements ClientModInitializer {
         }
 
         public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-            renderBackground(context);
+            renderBackground(context, mouseX, mouseY, delta);
             MinecraftClient mc = MinecraftClient.getInstance();
 
             context.drawText(textRenderer,"FPS: "+mc.getCurrentFps(),10,10,0xffffff,false);
