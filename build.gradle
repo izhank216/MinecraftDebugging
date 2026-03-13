@@ -26,4 +26,7 @@ java {
 
 loom {
     splitEnvironmentSourceSets()
+mixin {
+        defaultRefmapName = "minecraftdebugging-refmap.json"
+    }
 }
