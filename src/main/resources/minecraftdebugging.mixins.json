@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.izhan.dbg.minecraftdebugging.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "OptionsScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
